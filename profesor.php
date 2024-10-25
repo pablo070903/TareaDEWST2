@@ -1,5 +1,5 @@
 <?php
-class Profesor {
+class Profesor extends Miembro{
     public $titular;
     public $asignatura;
 

@@ -37,10 +37,17 @@ class Alumno extends Miembro{
     }
 
     public static function crearAlumnosDeMuestra() {
-        $alumnos = [];
-        $alumnos[] = new Alumno(20);
-        $alumnos[] = new Alumno(22);
-        $alumnos[] = new Alumno(19);
+        $alumno1=new Alumno(20);
+        $alumno1->abonarCurso();
+        $alumno1->matricularseEnAsignatura("Matemáticas");
+        $alumno1->matricularseEnAsignatura("Historia");
+ 
+        $alumno2 = new Alumno(22);
+        $alumno2->matricularseEnAsignatura("Biología");
+        $alumno2->matricularseEnAsignatura("Química");
+ 
+        $alumnos[] = $alumno1;
+        $alumnos[] = $alumno2;
         
         return $alumnos;
     }
