@@ -1,5 +1,7 @@
 <?php
+include 'miembro.php';
 class Alumno extends Miembro{
+    
     public $edad; 
     public $asignaturas; 
     public $cursoAbonado; 

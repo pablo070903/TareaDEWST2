@@ -1,4 +1,5 @@
 <?php
+include 'miembro.php';
 class Profesor extends Miembro{
     public $titular;
     public $asignatura;
