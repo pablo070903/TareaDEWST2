@@ -1,19 +1,16 @@
 <?php
 abstract class Miembro {
-    
     private int $id;
     private string $nombre;
     private string $apellidos;
     private string $email;
 
-    
     public function __construct(int $id, string $nombre, string $apellidos, string $email) {
         $this->id = $id;
         $this->nombre = $nombre;
         $this->apellidos = $apellidos;
         $this->email = $email;
     }
-
     
     public function getId(): int {
         return $this->id;
@@ -50,7 +47,7 @@ abstract class Miembro {
 
     
     public function __toString(): string {
-        return "Miembro{id=" . $this->id . ", nombre='" . $this->nombre . "', apellidos='" . $this->apellidos . "', email='" . $this->email . "'}";
+        return "miembro{id=" . $this->id . ", nombre='" . $this->nombre . "', apellidos='" . $this->apellidos . "', email='" . $this->email . "'}";
     }
 }
 ?>
