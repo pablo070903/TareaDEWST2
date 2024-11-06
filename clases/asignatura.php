@@ -15,15 +15,16 @@ class Asignatura{
  
     public static function crearAsignaturasDeMuestra() {
         return [
-            new Asignatura(1, "Matemáticas", 5),
-            new Asignatura(2, "Física", 4),
-            new Asignatura(3, "Química", 3),
+            new Asignatura(1, "DWES", 7),
+            new Asignatura(2, "DWEC", 6),
+            new Asignatura(3, "DIW", 4),
+            new Asignatura(4, "DAW", 4),
         ];
     }
 }
 
-$asignaturas = Asignatura::crearAsignaturasDeMuestra();
-foreach ($asignaturas as $asignatura) {
-    echo "ID: " . $asignatura->id . " - Nombre: " . $asignatura->nombre . " - Créditos: " . $asignatura->creditos . "\n";
-}
-?>
+//$asignaturas = Asignatura::crearAsignaturasDeMuestra();
+//foreach ($asignaturas as $asignatura) {
+//    echo "ID: " . $asignatura->id . " - Nombre: " . $asignatura->nombre . " - Créditos: " . $asignatura->creditos . "\n";
+//}
+//?>
